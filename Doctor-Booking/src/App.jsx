@@ -20,7 +20,7 @@ function App() {
       specialty: 'Cardiology',
       experience: '10 years',
       rating: 4.8,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://th.bing.com/th/id/OIP.Nd05cGLnTSfWm3As_q5WlQAAAA?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
       bio: 'Experienced cardiologist specializing in heart disease prevention and treatment.',
       fee: 150
     },
@@ -30,7 +30,7 @@ function App() {
       specialty: 'Pediatrics',
       experience: '8 years',
       rating: 4.9,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://th.bing.com/th/id/OIP.Nd05cGLnTSfWm3As_q5WlQAAAA?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
       bio: 'Dedicated pediatrician with expertise in child healthcare and development.',
       fee: 120
     },
@@ -40,7 +40,7 @@ function App() {
       specialty: 'Dermatology',
       experience: '12 years',
       rating: 4.7,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://th.bing.com/th/id/OIP.Nd05cGLnTSfWm3As_q5WlQAAAA?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
       bio: 'Board-certified dermatologist specializing in skin conditions and cosmetic procedures.',
       fee: 180
     },
@@ -50,7 +50,7 @@ function App() {
       specialty: 'Orthopedics',
       experience: '15 years',
       rating: 4.6,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://th.bing.com/th/id/OIP.Nd05cGLnTSfWm3As_q5WlQAAAA?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
       bio: 'Orthopedic surgeon with expertise in joint replacement and sports medicine.',
       fee: 200
     }

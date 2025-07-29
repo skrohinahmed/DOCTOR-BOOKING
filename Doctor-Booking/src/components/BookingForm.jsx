@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../App.jsx';
-
+const formatCurrency = (amount) => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'INR'
+  }).format(amount);
+};
 function BookingForm({ doctor, selectedSlot, onComplete, onCancel }) {
   const { bookAppointment } = useAppContext();
   const [patientInfo, setPatientInfo] = useState({
@@ -63,7 +68,7 @@ function BookingForm({ doctor, selectedSlot, onComplete, onCancel }) {
           <p><strong>Doctor:</strong> {doctor.name}</p>
           <p><strong>Specialty:</strong> {doctor.specialty}</p>
           <p><strong>Time:</strong> {selectedSlot}</p>
-          <p><strong>Fee:</strong> ${doctor.fee}</p>
+          <p><strong>Fee:</strong>{formatCurrency(doctor.fee)}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="booking-form">

@@ -3,6 +3,12 @@ import { useParams, Navigate } from 'react-router-dom';
 import { useAppContext } from '../App.jsx';
 import AvailabilityCalendar from './AvailabilityCalendar.jsx';
 import BookingForm from './BookingForm.jsx';
+const formatCurrency = (amount) => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'INR'
+  }).format(amount);
+};
 
 function DoctorDetail() {
   const { id } = useParams();
@@ -48,7 +54,7 @@ function DoctorDetail() {
           
           <div className="fee-info">
             <h3>Consultation Fee</h3>
-            <p className="fee-amount">${doctor.fee}</p>
+            <p className="fee-amount">{formatCurrency(doctor.fee)}</p>
           </div>
         </div>
       </div>
